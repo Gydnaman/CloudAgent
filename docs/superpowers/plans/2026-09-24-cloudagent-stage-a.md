@@ -8,7 +8,7 @@
 
 **Tech Stack:** Python 3.12, uv, FastAPI 0.141, Pydantic v2, LangGraph 1.2, AsyncPostgresSaver 3.1.2, PostgreSQL 18, Vue 3.5, TypeScript, Vite, Node.js 24 LTS, Alembic.
 
-**Spec:** `outputs/cloudagent/_bmad-output/implementation-artifacts/spec-cloudagent-stage-a.md`
+**Spec:** `docs/specifications/stage-a.md`
 
 ## Global Constraints
 

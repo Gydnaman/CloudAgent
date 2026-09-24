@@ -4,7 +4,7 @@ status: final
 updated: 2026-09-24
 sources:
   - docs/technical-proposals/phase-a.md
-  - _bmad-output/implementation-artifacts/spec-cloudagent-stage-a.md
+  - docs/specifications/stage-a.md
 ---
 
 ## Foundation

@@ -8,3 +8,5 @@ frontend/dist/
 **/*.pyc
 *.log
 .DS_Store
+/_bmad/
+/_bmad-output/

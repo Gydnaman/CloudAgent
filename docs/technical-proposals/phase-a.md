@@ -255,4 +255,4 @@ MockLLMProvider 用固定、可预测的合成应答按片段流式输出。响�
 
 结构评审提出将调研报告中的 GitHub 项目比较表移到框架分析之后。该编辑建议未采纳：本调研首先响应用户要求的 GitHub 项目检索，现有执行摘要已先给出技术判断，比较表先列证据符合调研阅读目的；不构成未解决问题。
 
-[查看完整三轮评审报告](../../reviews/phase-a-bmad-review.md)。本结论针对方案与调研文档；代码实现及其 §12 验收尚未执行。技术选型或接口发生变化时须修订方案并重新评审。
+[查看三轮方案评审记录](../reviews/phase-a-bmad-review.md)。阶段 A 实现与验收结果见[实现摘要](../specifications/stage-a.md)和[实现评审记录](../reviews/implementation-review.md)；尚未执行的端到端验证列在[已知验证限制](../known-limitations.md)。技术选型或接口发生变化时须修订方案并重新评审。

@@ -42,4 +42,4 @@
 - 真实浏览器断开 SSE 连接后由 UI 查询并恢复持久事件。
 - 保留 PostgreSQL 在途运行记录，强制重启 API/PostgreSQL 并确认启动对账终结孤儿运行。
 
-这两项有相应单元测试覆盖核心代码路径，但端到端环境证据尚缺，已逐项记入 `_bmad-output/implementation-artifacts/deferred-work.md`。
+这两项有相应单元测试覆盖核心代码路径，但端到端环境证据尚缺，已逐项记入[已知验证限制](../known-limitations.md)。

@@ -25,6 +25,14 @@ docker compose up --build
 
 创建会话返回的 token 只保存在浏览器 `sessionStorage`，仅由 `X-Demo-Session-Token` 请求头发送。关闭后，同一未过期 token 只能重放关闭结果；其他 session/run API 会拒绝。token 自创建起 8 小时过期。
 
+## 项目文档
+
+- [阶段 A 技术方案与调研](docs/technical-proposals/phase-a.md)
+- [阶段 A 实现与验收摘要](docs/specifications/stage-a.md)
+- [界面设计](docs/DESIGN.md) 与 [交互说明](docs/EXPERIENCE.md)
+- [方案评审记录](docs/reviews/phase-a-bmad-review.md) 与 [实现评审记录](docs/reviews/implementation-review.md)
+- [已知验证限制](docs/known-limitations.md)
+
 ## 开发与契约
 
 前端可单独运行 `cd frontend; pnpm install; pnpm dev`，Vite 将 `/api` 代理至 Compose API。后端 API 文档位于 `/docs`，OpenAPI 文件位于 `docs/api/openapi.json`。更新后端契约后运行 `uv run --project backend python -m app.openapi`，再在 `frontend/` 执行 `pnpm gen:types`，生成 `src/api/openapi.gen.ts`；客户端 DTO 位于 `frontend/src/api/types.ts`。SSE 为 POST fetch 流；每帧带 `id`、`event`、JSON `data`，持久化后才发送。重复 UUID 幂等键返回 409 和原 `run_id`，客户端据此补查，不重启图。
