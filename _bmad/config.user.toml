@@ -1,0 +1,6 @@
+[core]
+user_name = "项目发起人"
+communication_language = "Chinese"
+
+[modules.bmm]
+user_skill_level = "intermediate"
